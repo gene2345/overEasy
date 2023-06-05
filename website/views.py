@@ -158,3 +158,8 @@ def editPosition():
 @views.route('/history')
 def tester():
     return render_template("history.html", user = current_user)
+    
+@login_required
+@views.route('/historyrepeatsitself')
+def testers():
+    return render_template("history.html", user = current_user)
